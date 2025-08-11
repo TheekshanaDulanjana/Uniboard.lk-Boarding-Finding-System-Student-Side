@@ -21,7 +21,7 @@ const MapComponent = ({ location }) => {
   };
 
   return (
-    <LoadScript googleMapsApiKey="AIzaSyA9-BltZNFuulq9kErFBKnlmslOdtlTllU">
+    <LoadScript googleMapsApiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
       <div className="relative">
         <GoogleMap
           mapContainerStyle={mapContainerStyle}
